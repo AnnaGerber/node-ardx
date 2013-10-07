@@ -1,4 +1,9 @@
 
+
+No previous coding experience is required to work through the exercises in this guide. This primer summarises some of the basics of the JavaScript language that we will use to program our NodeBots. 
+
+See the [MDN JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference) for more detail.
+
 ## Variables
 
     var myVar;
@@ -102,7 +107,7 @@ Functions defined as part of an Object are known as methods, and can be called a
    
     myDate.getFullYear();
 
-## Exception Handling
+## Exception handling
 
     try {
 
@@ -128,4 +133,3 @@ Use `on` to attach a callback function that will be executed whenever the event 
     	// code to be executed when the board is ready
     });
 
-See the [MDN JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference) for more

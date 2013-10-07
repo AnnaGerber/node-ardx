@@ -1,7 +1,7 @@
 // Cache selectors
 var prevId = "intro";
 var menuItems = $('#list a[href]');
-var anchors = $("a[id]");
+var anchors = $("#main a[id]");
 $(window).scroll(function(){
   var topPos = $(this).scrollTop();
   var windowHeight = $(window).height();    

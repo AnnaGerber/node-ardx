@@ -13,13 +13,14 @@
   			<div class="nav-inner">
   				<div class="pure-menu pure-menu-open">
   					<ul>
-  						<li><a href="/">Introduction</a></li>
+  						<li<% if (title=="Introduction") { %> class="selected"<% } %>><a href="/">Introduction</a></li>
   						<li class="pure-menu-heading">Reference</li>
-  						<li><a href="/electronics-primer">Electronics Primer</a></li>
-  						<li><a href="/js-primer">JavaScript Primer</a></li>
+  						<li<% if (title=="Electronics Primer") { %> class="selected"<% } %>><a href="/electronics-primer">Electronics Primer</a></li>
+  						<li <% if (title=="JavaScript Primer") { %> class="selected"<% } %>><a href="/js-primer">JavaScript Primer</a></li>
   						<li class="pure-menu-heading">Exercises</li>
   						<% exercises.forEach(function(exercise, index){ %>
-  						  <li class="<%= exercise.selected %>">
+
+  						  <li class="<% if (isExercise && index == exIndex) { %>selected<% } %>">
   						  	<a href="/exercises/<%= index + 1 %>">
   						  		<%= index + 1 %>. <%= exercise.title %>
   						  	</a>
@@ -35,7 +36,7 @@
   		<div class="pure-u-1" id="main">
   			<div class="content">
   					<% if (isExercise) { %>
-  					  <%- include exercisecontent %>
+  					  <%- include exerciselayout %>
   					<% } else { %>
   					  <div class="content-header pure-g">
   						<div class="pure-u">

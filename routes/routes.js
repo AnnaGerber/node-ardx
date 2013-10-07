@@ -1,4 +1,4 @@
-var exercises = require('../exercises.json');
+var exercises = require('../content/exercises.json');
 var markedejs = require('markedejs');
 
 exports.intro = function(req, res){
@@ -49,10 +49,13 @@ exports.exercise = function(req, res){
 		if (exNumber.length == 1) {
 			exNumber = "0" + exNumber;
 		}
+		data.exIndex = exIndex;
 		data.circCode = exNumber;
-		data.content = "exercise content"
 		data.isExercise = true;
-		res.render('layout', data);
+		markedejs.renderFile('content/exercises/ex' + (exIndex+1) + '.md', {}, function(err, html){
+			data.content = html;
+			res.render('layout',data);
+		});
 	} else {
 		res.send(404, 'Unable to find exercise ' + req.params.ex);
 	}

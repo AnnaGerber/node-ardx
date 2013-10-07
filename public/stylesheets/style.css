@@ -43,6 +43,7 @@ a {
     border: none;
     text-align: left;
 }
+li.selected,
 #nav .pure-menu a:hover,
 #nav .pure-menu a:focus {
     background: rgb(55, 60, 90);

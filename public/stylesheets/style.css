@@ -72,7 +72,8 @@ li.selected,
     border-bottom: 1px solid #ddd;
     border-left: 6px solid transparent;
 }
-.exercise-title {
+
+h2, .exercise-title {
     text-transform: uppercase;
     color: #999;
 }

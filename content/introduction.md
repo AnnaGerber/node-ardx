@@ -1,4 +1,4 @@
-
+<a id="intro"></a>
 ## ABOUT THIS GUIDE
 
 NodeBots are Arduino-based robots that are controlled by [node.js](http://nodejs.org/). 
@@ -9,6 +9,7 @@ The overall goal of the this guide is fun. Beyond this, the aim is to get you co
 
 ![ARDX](images/ARDX-cover.jpg "ARDX")
 
+<a id="installing"></a>
 ### Installing
 
 You can install this guide to your own computer. Make sure you have node.js and the node package manager (npm) installed first.
@@ -24,6 +25,7 @@ Run the node-ardx web application from the node-ardx directory:
 
 Visit [http://localhost:3000](http://localhost:3000) in your web browser to view the guide.
 
+<a id="openhardware"></a>
 ## ABOUT OPEN SOURCE HARDWARE
 
 This guide has been adapted by [Anna Gerber](https://github.com/AnnaGerber) from the SparkFun version of .:oomlout:.'s ARDX (Arduino Experimenter's) Guide.
@@ -32,10 +34,12 @@ All of .:oomlout:.'s projects are open source. What does this mean? It means tha
 
 More details on the Creative Commons CC (By - Share Alike) License can be found at [http://ardx.org/CCLI](http://ardx.org/CCLI).
 
+<a id="j5"></a>
 ## ABOUT JOHNNY-FIVE
 
 We will be working with the [Johnny-Five](https://npmjs.org/package/johnny-five) library for node.js to program our nodebots. Johnny-Five uses a protocol called [Firmata](http://firmata.org/wiki/Main_Page) to communicate with the microcontroller over USB (Universal Serial Bus).
 
+<a id="firmata"></a>
 ### Setting Up Firmata
 
 Before you can start programming your NodeBots, you will need to load Firmata onto your Arduino-compatible microcontroller:
@@ -49,6 +53,7 @@ Before you can start programming your NodeBots, you will need to load Firmata on
 
 If you are having trouble uploading, a full trouble shooting guide can be found here: [http://ardx.org/TRBL](http://ardx.org/TRBL)
 
+<a id="running"></a>
 ### Running a Johnny-Five program
 
 The Johnny-Five module has already been installed when you installed this guide, so any code examples you create within the node-ardx directory will run. If you are creating code in a different location, you will need to install the Johnny-Five module, e.g:
@@ -59,6 +64,7 @@ Run code examples from the terminal e.g.
 
     node CIRC01-code-led-a-strobe.js
 
+<a id="repl"></a>
 ### Using the REPL
 
 Johnny-Five provides a Read-Eval-Print-Loop (REPL) that allows you type commands to control hardware interactively while your program is running. See the exercises for examples.

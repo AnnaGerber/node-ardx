@@ -62,7 +62,7 @@ The Johnny-Five module has already been installed when you installed this guide,
 
 Run code examples from the terminal e.g.
 
-    node CIRC01-code-led-a-strobe.js
+    node code/CIRC01-code-led-a-strobe.js
 
 <a id="repl"></a>
 ### Using the REPL

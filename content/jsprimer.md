@@ -111,11 +111,11 @@ Functions defined as part of an Object are known as methods, and can be called a
 ## Exception handling
 
     try {
-
+        // try to do something
     } catch (e) {
-
+        // handle errors
     } finally {
-
+        // this block is executed regardless of whether there was an exception
     }
 
 ## Require
@@ -123,7 +123,7 @@ Functions defined as part of an Object are known as methods, and can be called a
 Include a library in a node.js program
 
     var five = require("johnny-five");
-    var myLib = require("mylib");
+    var myLib = require("some-other-lib");
 
 ## Handling events
 

@@ -63,6 +63,8 @@ The `typeof` operator returns the type
 
 ## Conditional Behaviour
 
+Use comparison operators < (less than) > (greater than) <= (less than or equal) >= (greater than or equal) == (equals) != (not equals) 
+
     if (x > 0) {
 	    // do something
     } else {
@@ -71,7 +73,10 @@ The `typeof` operator returns the type
 
 #### Conditional operator:
 
+The conditional operator provides an inline shorthand: `(condition? expressionWhenTrue : expressionWhenFalse )` e.g.
+
     var myString = "I have " + (x == 1 ? x + "thing" : x + "things");
+
 
 ## Loops
 
@@ -80,7 +85,7 @@ The `typeof` operator returns the type
     }
 
     while (x < 10) {
-    	x++
+    	console.log(x++);
     }
 
 ## Functions
@@ -91,7 +96,7 @@ The `typeof` operator returns the type
 
 ## Calling functions
 
-    myIncrementFunction( 1000 );
+    myIncrementFunction(1000);
 
 Functions defined as part of an Object are known as methods, and can be called as follows:
    

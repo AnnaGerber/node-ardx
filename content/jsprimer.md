@@ -2,7 +2,8 @@
 
 No previous coding experience is required to work through the exercises in this guide. This primer summarises some of the basics of the JavaScript language that we will use to program our NodeBots. 
 
-See the [MDN JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference) for more detail.
+See the [MDN JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference) and <a href="https://github.com/rwaldron/johnny-five">Johnny-Five</a> docs for more detail.
+
 
 ## Variables
 

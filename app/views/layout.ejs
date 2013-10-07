@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/pure-min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+  	<div class="pure-g-r content<% if (!isExercise) { %> noExerciseMenu<% } %>" id="layout">
+  		<div class="pure-u<% if (!isExercise) { %> noExerciseMenu<% } %>" id="nav">
+  			<a href="#" class="nav-menu-button">Menu</a>
+  			<div class="nav-inner">
+  				<div class="pure-menu pure-menu-open">
+  					<ul>
+  						<li><a href="/">Introduction</a></li>
+  						<li class="pure-menu-heading">Reference</li>
+  						<li><a href="/electronics-primer">Electronics Primer</a></li>
+  						<li><a href="/js-primer">JavaScript Primer</a></li>
+  						<li><a href="https://github.com/rwaldron/johnny-five">Johnny-Five</a></li>
+  						<li class="pure-menu-heading">Exercises</li>
+  						<% exercises.forEach(function(exercise, index){ %>
+  						  <li class="<%= exercise.selected %>">
+  						  	<a href="/exercises/<%= index + 1 %>">
+  						  		<%= index + 1 %>. <%= exercise.title %>
+  						  	</a>
+  						  </li>
+  						<% }) %>
+  					</ul>
+  				</div>
+  			</div>
+  		</div>
+  		<% if (isExercise) { %>
+  		  <% include exercisemenu %>
+  		<% } %>
+  		<div class="pure-u-1" id="main">
+  			<div class="content">
+  					<% if (isExercise) { %>
+  					  <%- include exercisecontent %>
+  					<% } else { %>
+  					  <div class="content-header pure-g">
+  						<div class="pure-u">
+  							<h1 class="content-title"><%= title %></h1>
+  							<p class="content-subtitle">
+  								<%= subtitle %>
+  							</p>
+  						</div>
+  					  </div>
+  					  <div class="content-body">
+  					    <%- content %>
+  					  </div>
+  					<% } %>
+  			</div>
+  		</div>
+  	</div>
+  </body>
+</html>
+
+
+
+
+
+
+

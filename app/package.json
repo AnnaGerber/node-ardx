@@ -1,0 +1,16 @@
+{
+  "name": "node-ardx",
+  "description": "Exercises for exploring the Arduino Experimenters kit using nodejs",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.4.0",
+    "johnny-five": "~0.7.3",
+    "markedejs": "0.1.0",
+    "ejs": "*",
+    "app": "*"
+  }
+}

@@ -1,0 +1,114 @@
+body {
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #333;
+}
+a {
+    text-decoration: none;
+    color: #1b98f8;
+}
+#layout {
+    padding-left:430px; /* "left col (nav + list)" width */
+    position: relative;
+}
+
+#layout.noExerciseMenu {
+	padding-left: 180px;
+}
+#nav, #list {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+    font-size:90%;
+}
+#nav {
+    margin-left:-430px; /* "left col (nav + list)" width */
+    width:180px;
+    background: rgb(37, 42, 58);
+    text-align: center;
+    padding: 2em 0;
+}
+#nav.noExerciseMenu {
+	margin-left:-180px;
+}
+#list {
+    margin-left: -250px;
+    width:250px;
+    border-right: 1px solid #ddd;
+}
+
+/* Vertical Navigation Styles */
+#nav .pure-menu {
+    background: transparent;
+    border: none;
+    text-align: left;
+}
+#nav .pure-menu a:hover,
+#nav .pure-menu a:focus {
+    background: rgb(55, 60, 90);
+}
+#nav .pure-menu a {
+    color: #fff;
+    margin-left: 0.5em;
+}
+#nav .pure-menu-spacer {
+	height: 1em;
+}
+#nav .pure-menu-heading {
+    border-bottom: none;
+    font-size:110%;
+    color: rgb(75, 113, 151);
+}
+#nav .nav-menu-button {
+    display: none;
+}
+.exercise-item {
+    padding: 0.9em 1em;
+    border-bottom: 1px solid #ddd;
+    border-left: 6px solid transparent;
+}
+.exercise-title {
+    text-transform: uppercase;
+    color: #999;
+}
+.exercise-item-selected {
+    background: #eee;
+    border-left: 6px solid #02a3c6;
+}
+.header-image {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+    margin-right: 1em;
+    padding-top:1em;
+    height: 92px;
+    width: 92px;
+}
+.content-header, .content-body {
+    padding: 1em 1em;
+    max-width: 800px;
+}
+.content-header {
+    border-bottom: 1px solid #ddd;
+}
+.content-title {
+    margin: 20px 0 0;
+}
+.content-subtitle {
+	margin: 20px 0 0;
+	font-size: 110%;
+}
+.content-body img {
+	border: 1px solid #ddd;
+	padding:2px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+pre {
+	padding:1em;
+	border: 1px solid #ddd;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}

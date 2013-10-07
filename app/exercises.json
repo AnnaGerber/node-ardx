@@ -1,0 +1,61 @@
+[
+  {
+    "title": "Getting Started",
+    "thumbnail": "/images/CIRC-01-square.jpg",
+    "subtitle": "Blinking LED",
+    "code": ["CIRC01-code-led-a-strobe.js", "CIRC01-code-led-b-pulse.js"]
+  }, {
+    "title": "8 LED Fun",
+    "thumbnail": "/images/CIRC-02-square.jpg",
+    "subtitle": "Multiple LEDs",
+    "code": []
+  }, {
+    "title": "Spin Motor Spin",
+    "thumbnail": "/images/CIRC-03-square.jpg",
+    "subtitle": "Transistors and Motors",
+    "code": ["CIRC03-code-motor.js"]
+  }, {
+    "title": "A Single Servo",
+    "thumbnail": "",
+    "subtitle": "Servos",
+    "code": ["CIRC04-code-servo.js"]
+  }, {
+    "title": "8 More LEDs",
+    "thumbnail": "",
+    "subtitle": "74HC595 Shift Register"
+  }, {
+    "title": "Music",
+    "thumbnail": "",
+    "subtitle": "Piezo Elements",
+    "code": ["CIRC06-code-piezo.js"]
+  }, {
+    "title": "Button Pressing",
+    "thumbnail": "",
+    "subtitle": "Pushbuttons",
+    "code": ["CIRC07-code-button.js"]
+  }, {
+    "title": "Twisting",
+    "thumbnail": "",
+    "subtitle": "Potentiometers",
+    "code": ["CIRC08-code-pot.js"]
+  }, {
+    "title": "Light",
+    "thumbnail": "",
+    "subtitle": "Photo Resistors",
+    "code": ["CIRC09-code-photoresistor.js"]
+  }, {
+    "title": "Temperature ",
+    "thumbnail": "",
+    "subtitle": "TMP36 Temperature Sensor",
+    "code": ["CIRC10-code-temperaturesensor.js"]
+  }, {
+    "title": "Larger Loads",
+    "thumbnail": "",
+    "subtitle": "Relays"
+  }, {
+    "title": "Colorful Light",
+    "thumbnail": "",
+    "subtitle": "RGB LEDs",
+    "code": ["CIRC12-code-led-rgb.js"]
+  }
+] 

@@ -7,7 +7,7 @@ This guide will step you through assembling and progamming a number of projects 
 
 The overall goal of the this guide is fun. Beyond this, the aim is to get you comfortable using node.js to control a wide range of electronic components through small, simple and easy circuits. The focus is to get each circuit working then to give you the tools to figure out how it works and how to extend it. 
 
-![ARDX](images/ARDX-cover.jpg "ARDX")
+![ARDX](/images/ARDX-cover.jpg "ARDX")
 
 <a id="installing"></a>
 ### Installing

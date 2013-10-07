@@ -26,7 +26,7 @@ Assembly video: http://ardx.org/VIDE08
 <a id="code"></a>
 ## Code
 
-You can find this code in `code/CIRC-01-code-pot.js`
+You can find this code in `code/CIRC-08-code-pot.js`
 
 	var five = require("johnny-five"),
 	    board, myPotentiometer;
@@ -60,7 +60,7 @@ You can try operating the circuit upside down. Sometimes this helps.
 ## Extending the Code
 
 ### Controlling a servo:
-This is a really neat example and brings a couple of circuits together. Wire up the servo like you did in CIRC-04, then modify the code
+This is a really neat example and brings a couple of circuits together. Wire up the servo like you did in [Exercise 4](/exercises/4), then modify the code
 
 Run the program and then watch as the servo shaft turns as you turn the potentiometer.
 

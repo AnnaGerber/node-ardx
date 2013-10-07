@@ -59,7 +59,7 @@ http://ardx.org/RESI
 <hr/>
 <a id="transistor"></a>
 ## Transistor
-
+![Transistor](/images/parts/TRANS.jpg "Transistor")
 ### What it Does:
 Uses a small current to switch or amplify a much larger current.
 
@@ -76,7 +76,7 @@ http://ardx.org/TRAN
 <hr/>
 <a id="servo"></a>
 ## Servo
-
+![Servo](/images/parts/SERVO.jpg "Servo")
 ### What it Does:
 Takes a timed pulse and converts it into an angular position of the output shaft.
 ### No. of Leads:
@@ -92,7 +92,7 @@ http://ardx.org/SERV
 <hr/>
 <a id="dcmotor"></a>
 ## DC Motor 
-
+![DC Motor](/images/parts/MOTOR.jpg "DC Motor")
 ### What it Does:
 Spins when a current is passed through it.
 ### No. of Leads:
@@ -105,26 +105,11 @@ Using a transistor or relay that is rated for the size of motor you're using.
 ### More Details:
 http://ardx.org/MOTO
 
-<hr/>
-<a id=""></a>
-## 
-
-### What it Does:
-
-### No. of Leads:
-2 
-### Identifying:
-
-### Things to watch out for:
-
-
-### More Details:
-http://ardx.org/
 
 <hr/>
 <a id="piezo"></a>
 ## Piezo Element
-
+![Piezo](/images/parts/PIEZO.jpg "Piezo")
 ### What it Does:
 A pulse of current will cause it to click. A stream of pulses will cause it to emit a tone.
 ### No. of Leads:
@@ -140,7 +125,7 @@ http://ardx.org/PIEZ
 <hr/>
 <a id="ic"></a>
 ## IC (Integrated Circuit)
-
+![IC-74HC595](/images/parts/IC-74HC595.jpg "IC-74HC595")
 ### What it Does:
 Packages any range of complicated electronics inside an easy to use package.
 ### No. of Leads:
@@ -156,7 +141,7 @@ http://ardx.org/ICIC
 <hr/>
 <a id="pushbutton"></a>
 ## Pushbutton
-
+![Button](/images/parts/BUTT.jpg "Button")
 ### What it Does:
 Completes a circuit when it is pressed.
 ### No. of Leads:

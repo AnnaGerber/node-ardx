@@ -3,6 +3,7 @@
 
     var myVar;
 Use the comma operator to declare multiple variables in a single declaration e.g.
+
     var x, y;
 
 ## Variable assignment
@@ -42,11 +43,11 @@ The `typeof` operator returns the type
 
 ## Math
 
-   Math.floor(myInt)
-   Math.ceil(myInt)
-   Math.min(x, y)
-   Math.random() // returns random number between 0 and up to but not equal to 1
-   Math.PI
+    Math.floor(myInt)
+    Math.ceil(myInt)
+    Math.min(x, y)
+    Math.random() // random number between 0 and up to but not equal to 1
+    Math.PI
 
 ## Comments
 
@@ -94,7 +95,7 @@ The `typeof` operator returns the type
 
 Functions defined as part of an Object are known as methods, and can be called as follows:
    
-   myDate.getFullYear();
+    myDate.getFullYear();
 
 ## Exception Handling
 
@@ -115,7 +116,7 @@ Include a library in a node.js program
 
 ## Handling events
 
-The callback function will be executed whenever the event occurs:
+Use `on` to attach a callback function that will be executed whenever the event occurs:
 
     var myBoard = new five.Board();
     myBoard.on("ready", function() {

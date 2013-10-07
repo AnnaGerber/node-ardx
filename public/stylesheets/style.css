@@ -43,6 +43,10 @@ a {
     border: none;
     text-align: left;
 }
+hr {
+  border: none;
+  border-bottom: 1px solid #eee;
+}
 li.selected,
 #nav .pure-menu a:hover,
 #nav .pure-menu a:focus {

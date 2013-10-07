@@ -7,8 +7,8 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-  	<div class="pure-g-r content<% if (!isExercise) { %> noExerciseMenu<% } %>" id="layout">
-  		<div class="pure-u<% if (!isExercise) { %> noExerciseMenu<% } %>" id="nav">
+  	<div class="pure-g-r content<% if (!isExercise && title!="Electronics Primer") { %> noExerciseMenu<% } %>" id="layout">
+  		<div class="pure-u<% if (!isExercise && title!="Electronics Primer") { %> noExerciseMenu<% } %>" id="nav">
   			<a href="#" class="nav-menu-button">Menu</a>
   			<div class="nav-inner">
   				<div class="pure-menu pure-menu-open">
@@ -33,6 +33,9 @@
   		<% if (isExercise) { %>
   		  <% include exercisemenu %>
   		<% } %>
+      <% if (title == "Electronics Primer") { %>
+        <% include eprimermenu %>
+      <% } %>
   		<div class="pure-u-1" id="main">
   			<div class="content">
   					<% if (isExercise) { %>

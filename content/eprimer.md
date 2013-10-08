@@ -1,6 +1,7 @@
 
-No previous electronic experience is required to have fun with the Arduino Experimenter's Kit. Here are a few details about each component to make identifying, and perhaps understanding them, a bit easier.
+No previous electronics experience is required to have fun with the Arduino Experimenter's Kit. Here are a few details about each component to make identifying, and perhaps understanding them, a bit easier.
 
+For an introduction to what an Arduino is, visit http://arduino.cc/en/Guide/HomePage
 
 <a id="led"></a>
 
@@ -32,7 +33,7 @@ The electronic equivalent of a one way valve. Allowing current to flow in one di
 ### No. of Leads:
 2 
 ### Identifying:
-Usually a cylinder with wires extending from either end. (and an off center line indicating polarity)
+Usually a cylinder with wires extending from either end (and an off center line indicating polarity).
 ### Things to watch out for:
 Will only work in one direction (current will flow if end with the line is connected to ground)
 ### More Details:
@@ -49,6 +50,9 @@ Restricts the amount of current that can flow through a circuit.
 2 
 ### Identifying:
 Cylinder with wires extending from either end. The value is displayed using a color coding system.
+
+![Resistor Colors](/images/ResistorColors.png "Resistor Colors")
+
 ### Things to watch out for:
 Easy to grab the wrong value (double check the colors before using)
 
@@ -66,7 +70,7 @@ Uses a small current to switch or amplify a much larger current.
 ### No. of Leads:
 3 (Base, Collector, Emitter)
 ### Identifying:
-Comes in many different packages but you can read the part number off the package. (P2N2222AG in this kit and find a datasheet online)
+Comes in many different packages but you can read the part number off the package (P2N2222AG in this kit)
 ### Things to watch out for:
 Plugging in the right way round (also a current limiting resistor is often needed on the base pin)
 ### More Details:
@@ -131,9 +135,9 @@ Packages any range of complicated electronics inside an easy to use package.
 ### No. of Leads:
 2 - 100s (in this kit there is one with 3 (TMP36) and one with 16 (74HC595)
 ### Identifying:
-The part ID is written on the outside of the package. (this sometimes requires a lot of light or a magnifying glass to read).
+The part ID is written on the outside of the package (this sometimes requires a lot of light or a magnifying glass to read).
 ### Things to watch out for:
-Proper orientation. (look for marks showing pin 1)
+Proper orientation (look for marks showing pin 1)
 
 ### More Details:
 http://ardx.org/ICIC
@@ -231,6 +235,6 @@ The points in each row are connected horizontally
 ## Header Pins
 ![Header Pins](/images/parts/HEAD-16.jpg "Header pins")
 ### What it Does:
-In this kit, header pins are used to secure the circuit sheets to the breadboard and to connect component leads (e.g. on the servo) to the breadboard. Pins can be snapped off to desired length.
+In this kit, header pins are used to secure the circuit sheets to the breadboard and to connect component leads (e.g. on the servo) to the breadboard. Groups of pins can be snapped off to desired length.
 
 

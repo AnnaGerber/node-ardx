@@ -24,10 +24,10 @@ myBoard.on("ready", function() {
 
   function oneAfterAnother() {
   	var delay = 1;
-  	var counter = 0;
+  	board.counter = 0;
   	for (var i = 0; i < leds.length; i++) {
   	  var led = leds[i];
-  	  board.counter = 0;
+
   	  board.wait(delay,function(){
   	    console.log(this.counter + " on")
   	  	leds[this.counter].on();

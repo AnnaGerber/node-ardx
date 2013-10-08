@@ -29,12 +29,35 @@ Assembly video: http://ardx.org/VIDE05
 <a id="code"></a>
 ## Code
 
-You can find this code in `code/CIRC-05-code-.js`
+You can find this code in `code/CIRC-05-code-shiftregister.js`
 
+	var five = require("johnny-five"),
+	    board, shiftRegister;
+	board = new five.Board();
+	board.on("ready", function() {
+	  shiftRegister = new five.ShiftRegister({
+	    pins: {
+	      data: 2,
+	      clock: 3,
+	      latch: 4
+	    }
+	  });
+	  var value = 0;
+	  function next() {
+	    value = value > 0x11 ? value >> 1 : 0x88;
+	    shiftRegister.send( value );
+	    setTimeout(next, 300);
+	  }
+	  next();
+	});
 
 <a id="troubleshooting"></a>
 ## Troubleshooting
 
+### The Arduino's power LED goes out 
+This happened to us a couple of times, it happens when the chip is inserted backwards. If you fix it quickly nothing will break. 
+## Not Quite Working
+Sorry to sound like a broken record but it is probably something as simple as  a crossed wire or reversed LED.
 
 <a id="extending"></a>
 ## Extending the Code

@@ -69,7 +69,8 @@ Diodes are polarized - that means they will only work in one direction. Try taki
 
 Make sure you have connected the Arduino to the computer via USB.
 
-Sometimes this can also happen if Johnny-Five can't communicate with the Arduino via the USB serial connection. Make sure you have closed the Arduino IDE before you run the program to avoid any conficts. If the problem persists, you can tell Johnny-Five exactly what port to use (use the port that corresponds to your Arduino) e.g:
+### Still not working?
+Sometimes this happens if Johnny-Five can't communicate with the Arduino via the USB serial connection. Make sure you have closed the Arduino IDE before you run the program to avoid any conficts. If the problem persists, you can tell Johnny-Five exactly what port to use (use the port that corresponds to your Arduino) e.g:
 
     var board = new j5.Board({port:'/dev/tty.usbmodemfa131'});
 

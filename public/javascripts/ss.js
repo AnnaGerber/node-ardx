@@ -16,7 +16,14 @@ $(window).scroll(function(){
   if (first && prevId != id) {
     prevId = id;
     menuItems.closest('.exercise-item').removeClass("exercise-item-selected");
-    menuItems.filter("[href='#"+id+"']").closest('.exercise-item').addClass("exercise-item-selected");
+    var menuItem = menuItems.filter("[href='#"+id+"']").closest('.exercise-item').addClass("exercise-item-selected");
+    var menuItemTop = menuItem.offset().top;
+    // scroll off screen menu item
+    if (menuItemTop > topPos + windowHeight) {
+      $('#list').animate({scrollTop : $('#list').scrollTop() + windowHeight/2})
+    } else if (menuItemTop < topPos) {
+      $('#list').animate({scrollTop : $('#list').scrollTop() - windowHeight/2})
+    }
   }              
 });
 $('.exercise-title').on('click', function(){

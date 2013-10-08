@@ -66,7 +66,7 @@ If the servo begins moving then twitches, and there's a flashing light on your A
 We have yet to experiment with inputs but if you would like to read ahead, [Exercise 8](/exercises/8) uses a potentiometer to control an LED. See the [Extending the Code](/exercises/8#extending) section for an exercise to write code to use a potentiometer to control the speed of a servo.
 
 ### Great ideas
-Servos can be used to do all sorts of great things, here are a few of our favorites.
+Servos can be used to do all sorts of great things. Here are a few of our favorites:
 
 * Christmas Hit counter: http://ardx.org/XMAS
 * Open Source Robotic Arm (uses a servo controller as well as the Arduino): http://ardx.org/RARM

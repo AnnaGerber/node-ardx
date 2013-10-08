@@ -68,3 +68,11 @@ Run code examples from the terminal e.g.
 ### Using the REPL
 
 Johnny-Five provides a Read-Eval-Print-Loop (REPL) that allows you type commands to control hardware interactively while your program is running. See the exercises for examples.
+
+## License
+
+This work is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported License
+
+To view a copy of this license visit http://creativecommons.org/licenses/by-sa/3.0/
+
+Or send a letter to: Creative Commons<COMMA> 171 Second Street<COMMA> Suite 300<COMMA> San Francisco<COMMA> California 94105<COMMA> USA.

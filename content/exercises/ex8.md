@@ -59,10 +59,20 @@ You can try operating the circuit upside down. Sometimes this helps.
 <a id="extending"></a>
 ## Extending the Code
 
-### Controlling a servo:
-This is a really neat example and brings a couple of circuits together. Wire up the servo like you did in [Exercise 4](/exercises/4), then modify the code
+### Threshold switching
 
-Run the program and then watch as the servo shaft turns as you turn the potentiometer.
+Sometimes you will want to switch an output when a value exceeds a certain threshold. To do this with a potentiometer, add a variable for the threshold value to your program (e.g. `var threshold = 512;`) and change the code in the "read" handler to:
+    
+	if (this.raw > threshold) {
+	   myLed.on();
+	} else {
+	   myLed.off();   
+	}
+
+### Controlling a servo:
+This is a really neat example and brings a couple of circuits together. Wire up the servo like you did in [Exercise 4](/exercises/4), then modify the "read" handler to set the position of the servo using `servo.move(someValue)`. You can use the map function to map a number from one range to another.e.g. `five.Fn.map(rawValue, 0, 1024, 0, 180)` to map the value from the potentiometer to an angle between 0 and 180 for the servo.
+
+Run your program and then watch as the servo shaft turns as you turn the potentiometer.
 
 <a id="more"></a>
 ## More

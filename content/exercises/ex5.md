@@ -56,7 +56,7 @@ You can find this code in `code/CIRC-05-code-shiftregister.js`
 
 ### The Arduino's power LED goes out 
 This happened to us a couple of times, it happens when the chip is inserted backwards. If you fix it quickly nothing will break. 
-## Not Quite Working
+### Not Quite Working
 Sorry to sound like a broken record but it is probably something as simple as  a crossed wire or reversed LED.
 
 <a id="extending"></a>

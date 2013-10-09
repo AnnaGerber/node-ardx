@@ -85,10 +85,10 @@ a threshold value. Change the code in the photoresistor's read handler to:
 	  });
 
 ### Light controlled servo
-Let's use our newly found light sensing skills to control a servo. Wire up a servo connected to pin 9 (like in [Exercise 4](/exercises/4)). Then open the code you used for [Exercise 8](/exercises/8#extending)
+Let's use our newly found light sensing skills to control a servo. Wire up a servo connected to pin 9 (like in [Exercise 4](/exercises/4)). Then open the code you wrote for controlling a servo in [Exercise 8](/exercises/8#extending) and satch as it works unmodified.
 
 ### Using the full range of your servo:
-You'll notice that the servo will only operate over a limited portion of its range. This is because with the voltage dividing circuit we use the voltage on analog pin 0 will not range from 0 to 5 volts but instead between two lesser values (these values will change based on your setup). To fix this play with the `five.Fn.constrain(five.Fn.map(value, 0, 900, 0, 255), 0, 255);` line. For hints on what to do visit http://arduino.cc/en/Reference/Map .
+You'll notice that the servo will only operate over a limited portion of its range. This is because with the voltage dividing circuit we use the voltage on analog pin 0 will not range from 0 to 5 volts but instead between two lesser values (these values will change based on your setup). To fix this play with the `five.Fn.constrain(five.Fn.map(value, 0, 1023, 0, 179), 0, 255);` line.
 
 <a id="more"></a>
 ## More

@@ -25,7 +25,6 @@ Assembly video: http://ardx.org/VIDE06
 
 <a id="code"></a>
 ## Code
-** Note: Piezo is currently disabled in johnny-five so this code won't work **
 
 You can find this code in `code/CIRC-06-code-beep.js`
 

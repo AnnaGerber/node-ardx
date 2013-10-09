@@ -71,6 +71,10 @@ Johnny-Five provides a Read-Eval-Print-Loop (REPL) that allows you type commands
 
 ## License
 
+The source code is available from https://github.com/AnnaGerber/node-ardx
+
+Code examples are issued under an MIT license
+
 This work is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported License
 
 To view a copy of this license visit http://creativecommons.org/licenses/by-sa/3.0/

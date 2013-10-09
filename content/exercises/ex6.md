@@ -61,7 +61,7 @@ Just pull up the piezo element whilst you think, run the program then plug it ba
 <a id="extending"></a>
 ## Extending the Code
 
-
+Take a look at piezo.js in johnny-five's lib folder for an example of how to write functions to work with tones and durations rather than directly talking to the hardware.
 
 <a id="more"></a>
 ## More

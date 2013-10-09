@@ -3,7 +3,9 @@ To this point we have controlled light, motion, and
 electrons. Let's tackle sound next. But sound is an
 analog phenomena, how will our digital Arduino cope?
 We will once again rely on its incredible speed which will let it
-mimic analog behavior. To do this, we will attach a piezo element to one of the Arduino's digital pins. A piezo element makes a clicking sound each time it is pulsed with current. If we pulse it at the right frequency (for example 440 times a second to make the note middle A) these clicks will run together to produce notes. Let's get to experimenting with it and get your Arduino playing "Twinkle Twinkle Little Star".
+mimic analog behavior. To do this, we will attach a piezo element to one of the Arduino's digital pins. A piezo element makes a clicking sound each time it is pulsed with current. If we pulse it at the right frequency (for example 440 times a second to make the note middle A) these clicks will run together to produce notes.
+
+** Note: At the time of writing, the Piezo object is disabled in Johnny-Five - so skip this exercise for now, or you can make the piezo beep by writing directly to the pins e.g. using `board.analogWrite(9,value)` **
 
 <a id="parts"></a>
 ## Parts
@@ -24,9 +26,28 @@ Assembly video: http://ardx.org/VIDE06
 
 <a id="code"></a>
 ## Code
+** Note: Piezo is currently disabled in johnny-five so this code won't work **
 
 You can find this code in `code/CIRC-06-code-piezo.js`
 
+	var five = require("johnny-five"),
+	    board, piezo;
+
+	board = new five.Board({
+	  debug: true
+	});
+	board.on("ready", function() {
+	  piezo = new five.Piezo(9);
+
+	  board.repl.inject({
+	    piezo: piezo
+	  });
+
+
+	  // piezo.note( volume, duration );
+	  piezo.tone( 20, 500 );
+
+	});
 
 
 <a id="troubleshooting"></a>
@@ -35,11 +56,9 @@ You can find this code in `code/CIRC-06-code-piezo.js`
 ### No Sound
 Given the size and shape of the piezo element it is easy to miss the right holes on the breadboard. Try double checking its placement.
 
-### Can't Think While the Melody is Playing?
+### Can't Think While the Notes are Playing?
 Just pull up the piezo element whilst you think, run the program then plug it back in.
 
-### Tired of Twinkle Twinkle Little Star?
-The code is written so you can easily add your own songs, check out the code below to get started.
 
 <a id="extending"></a>
 ## Extending the Code

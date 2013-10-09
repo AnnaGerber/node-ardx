@@ -118,3 +118,12 @@ pre {
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 }
+table {
+    
+
+    width:100%;
+}
+td, th {
+    border: 1px solid #eeeeee;
+    padding:2em;
+}

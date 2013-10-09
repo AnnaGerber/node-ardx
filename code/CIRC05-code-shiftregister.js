@@ -17,8 +17,12 @@ board.on("ready", function() {
   function next() {
     value = value > 0x11 ? value >> 1 : 0x88;
     shiftRegister.send( value );
-    setTimeout(next, 300);
+    setTimeout(next, 300); 
   }
+
+  this.repl.inject({
+    sr: shiftRegister
+  });
 
   next();
 

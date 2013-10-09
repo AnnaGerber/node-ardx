@@ -87,14 +87,14 @@ Some patterns to try:
 
 Pattern      | Binary Value | Hex value | Decimal Value
 -------------|--------------|-----------|--------------
-LED 1 only   | 00000001     | 0x01      | 1
-LED 2 only   | 00000010     | 0x02      | 2
-LED 3 only   | 00000100     | 0x04      | 4
-LED 4 only   | 00001000     | 0x08      | 8
-LED 5 only   | 00010000     | 0x10      | 16
-LED 6 only   | 00100000     | 0x20      | 32
-LED 7 only   | 01000000     | 0x40      | 64
-LED 8 only   | 10000000     | 0x80      | 128
+LED 8 only   | 00000001     | 0x01      | 1
+LED 7 only   | 00000010     | 0x02      | 2
+LED 6 only   | 00000100     | 0x04      | 4
+LED 5 only   | 00001000     | 0x08      | 8
+LED 4 only   | 00010000     | 0x10      | 16
+LED 3 only   | 00100000     | 0x20      | 32
+LED 2 only   | 01000000     | 0x40      | 64
+LED 1 only   | 10000000     | 0x80      | 128
 
  For details on how this works take a look at http://ardx.org/BINA. An Arduino is very good at manipulating bits and there are an entire set of operators that help us out. Details on bitwise maths ( http://ardx.org/BITW ).
 

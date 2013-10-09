@@ -5,7 +5,6 @@ analog phenomena, how will our digital Arduino cope?
 We will once again rely on its incredible speed which will let it
 mimic analog behavior. To do this, we will attach a piezo element to one of the Arduino's digital pins. A piezo element makes a clicking sound each time it is pulsed with current. If we pulse it at the right frequency (for example 440 times a second to make the note middle A) these clicks will run together to produce notes.
 
-** Note: At the time of writing, the Piezo object is disabled in Johnny-Five - so skip this exercise for now, or you can make the piezo beep by writing directly to the pins e.g. using `board.analogWrite(9,value)` **
 
 <a id="parts"></a>
 ## Parts
@@ -28,27 +27,27 @@ Assembly video: http://ardx.org/VIDE06
 ## Code
 ** Note: Piezo is currently disabled in johnny-five so this code won't work **
 
-You can find this code in `code/CIRC-06-code-piezo.js`
+You can find this code in `code/CIRC-06-code-beep.js`
 
-	var five = require("johnny-five"),
-	    board, piezo;
+	var five = require("johnny-five");
 
-	board = new five.Board({
-	  debug: true
+	five.Board().on("ready", function() {
+	  var val = 0;
+	  var piezoPin = 9;
+	  // Set pin 9 to PWM mode
+	  this.pinMode( piezoPin, 3 );
+	  // beep continously
+	  this.loop(200, function(){
+	  	if (val){
+	  		this.analogWrite( piezoPin, 20 );
+	  	} else {
+	  		this.analogWrite(piezoPin, 0);
+	  	}
+	  	val = val ? 0 : 1;
+	  })
 	});
-	board.on("ready", function() {
-	  piezo = new five.Piezo(9);
 
-	  board.repl.inject({
-	    piezo: piezo
-	  });
-
-
-	  // piezo.note( volume, duration );
-	  piezo.tone( 20, 500 );
-
-	});
-
+** Note: At the time of writing, the Piezo object is disabled in Johnny-Five - so we will make the piezo beep by writing directly to the pins e.g. using `board.analogWrite(9,value)` **
 
 <a id="troubleshooting"></a>
 ## Troubleshooting

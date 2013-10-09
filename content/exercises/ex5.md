@@ -76,25 +76,25 @@ If you look at the code for the ShiftRegister `send` method, you can see how thi
 
 ### Controlling individual LEDs
 
-Time to start controlling the LEDs in a similar method as we did in [Exercise 2](/exercises/2). As the eight LED states are stored in one byte (an 8 bit value) e.g. the binary (base-2) number `10000100` represents that the first and sixth LED will be on, while the others will be off. To control which LEDs are on, use the `send` method, providing the hexidecimal (base-16) equivalent of the binary number for the pattern you want (e.g. 0x84 for the above pattern).
+Time to start controlling the LEDs in a similar method as we did in [Exercise 2](/exercises/2). As the eight LED states are stored in one byte (an 8 bit value) e.g. the binary (base-2) number `10000100` represents that the first and sixth LED will be on, while the others will be off. To control which LEDs are on, use the `send` method, providing the decimal (base-10) or hexidecimal (base-16) equivalent of the binary number for the pattern you want (e.g. 0x84 for the above pattern).
 
 Comment out the next() function call at the end and run the program again. Use the REPL to try sending diferent values to the shift register until you understand how this works e.g. the following will turn all LEDs off and then turn on LED 2: 
 
-    sr.send(0x0)
+    sr.send(0)
     sr.send(0x02)
 
 Some patterns to try:
 
-Pattern      | Binary Value | Hex value
--------------|--------------|-----------
-LED 1 only   | 00000001     | 0x01
-LED 2 only   | 00000010     | 0x02
-LED 3 only   | 00000100     | 0x04
-LED 4 only   | 00001000     | 0x08
-LED 5 only   | 00010000     | 0x10
-LED 6 only   | 00100000     | 0x20
-LED 7 only   | 01000000     | 0x40
-LED 8 only   | 10000000     | 0x80
+Pattern      | Binary Value | Hex value | Decimal Value
+-------------|--------------|-----------|--------------
+LED 1 only   | 00000001     | 0x01      | 1
+LED 2 only   | 00000010     | 0x02      | 2
+LED 3 only   | 00000100     | 0x04      | 4
+LED 4 only   | 00001000     | 0x08      | 8
+LED 5 only   | 00010000     | 0x10      | 16
+LED 6 only   | 00100000     | 0x20      | 32
+LED 7 only   | 01000000     | 0x40      | 64
+LED 8 only   | 10000000     | 0x80      | 128
 
  For details on how this works take a look at http://ardx.org/BINA. An Arduino is very good at manipulating bits and there are an entire set of operators that help us out. Details on bitwise maths ( http://ardx.org/BITW ).
 

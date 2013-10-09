@@ -3,7 +3,9 @@ node-ardx
 
 Arduino Experimentors Guide adapted for nodebots
 
-Contents adapted under a CC-BY-SA license from http://ardx.org/src/ from materials created by .:oomlout:. and SparkFun.
+Exercise contents (i.e. descriptions, circuit layout diagrams, 3d assembly diagrams) are adapted under a CC-BY-SA license from http://ardx.org/src/ from materials created by .:oomlout:. and SparkFun.
+
+Code examples are issued under an MIT license. 
 
 Install this guide with the following commands:
 

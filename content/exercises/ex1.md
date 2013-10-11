@@ -12,7 +12,7 @@ Plug the Arduino in, and run the program from the node-ardx directory as follows
 
     node code/CIRC01-code-led-a-strobe.js
 
-You can interact with the LED via the REPL console. Hit control-D to exit the program when you are done.
+You can interact with the LED via the REPL console e.g. at the `>>` prompt type `led.stop()` to make it stop blinking. Hit control-D to exit the program when you are done.
 
 <a id="parts"></a>
 ## Parts

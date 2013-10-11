@@ -20,7 +20,7 @@ The 1N4001 diode is acting as a flyback diode. For details on why it's there vis
 
 <a id="circuit"></a>
 ## Circuit Layout
-[<img style="max-width:400px" src="/images/circ/CIRC03-sheet.png" alt="Circuit Layout"/>](/images/circ/CIRC03-sheet.png)
+[<img style="max-width:400px" src="/images/circ/CIRC03-sheet-small.png" alt="Circuit Layout"/>](/images/circ/CIRC03-sheet.png)
 
 <a id="assembly"></a>
 ## Circuit Assembly

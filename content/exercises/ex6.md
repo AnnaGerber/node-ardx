@@ -15,7 +15,7 @@ mimic analog behavior. To do this, we will attach a piezo element to one of the 
 
 <a id="circuit"></a>
 ## Circuit Layout
-[<img style="max-width:400px" src="/images/circ/CIRC06-sheet.png" alt="Circuit Layout"/>](/images/circ/CIRC06-sheet.png)
+[<img style="max-width:400px" src="/images/circ/CIRC06-sheet-small.png" alt="Circuit Layout"/>](/images/circ/CIRC06-sheet.png)
 
 <a id="assembly"></a>
 ## Circuit Assembly

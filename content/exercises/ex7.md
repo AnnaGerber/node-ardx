@@ -19,7 +19,7 @@ This is included because an Arduino doesn't sense the same way we do (ie button 
 
 <a id="circuit"></a>
 ## Circuit Layout
-[<img style="max-width:400px" src="/images/circ/CIRC07-sheet.png" alt="Circuit Layout"/>](/images/circ/CIRC07-sheet.png)
+[<img style="max-width:400px" src="/images/circ/CIRC07-sheet-small.png" alt="Circuit Layout"/>](/images/circ/CIRC07-sheet.png)
 
 <a id="assembly"></a>
 ## Circuit Assembly

@@ -15,7 +15,7 @@ it to a digital number between 0 (0 volts) and 1024 (5 volts) (10 bits of resolu
 
 <a id="circuit"></a>
 ## Circuit Layout
-[<img style="max-width:400px" src="/images/circ/CIRC08-sheet.png" alt="Circuit Layout"/>](/images/circ/CIRC08-sheet.png)
+[<img style="max-width:400px" src="/images/circ/CIRC08-sheet-small.png" alt="Circuit Layout"/>](/images/circ/CIRC08-sheet.png)
 
 <a id="assembly"></a>
 ## Circuit Assembly

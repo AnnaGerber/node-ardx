@@ -24,7 +24,7 @@ You can interact with the LED via the REPL console. Hit control-D to exit the pr
 
 <a id="circuit"></a>
 ## Circuit Layout
-[<img style="max-width:400px" src="/images/circ/CIRC01-sheet.png" alt="Circuit Layout"/>](/images/circ/CIRC01-sheet.png)
+[<img style="max-width:400px" src="/images/circ/CIRC01-sheet-small.png" alt="Circuit Layout"/>](/images/circ/CIRC01-sheet.png)
 
 <a id="assembly"></a>
 ## Circuit Assembly

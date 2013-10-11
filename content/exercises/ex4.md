@@ -15,7 +15,7 @@ dollars to hundreds. Inside is a small gearbox (to make the movement more powerf
 
 <a id="circuit"></a>
 ## Circuit Layout
-[<img style="max-width:400px" src="/images/circ/CIRC04-sheet.png" alt="Circuit Layout"/>](/images/circ/CIRC04-sheet.png)
+[<img style="max-width:400px" src="/images/circ/CIRC04-sheet-small.png" alt="Circuit Layout"/>](/images/circ/CIRC04-sheet.png)
 
 <a id="assembly"></a>
 ## Circuit Assembly

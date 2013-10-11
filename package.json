@@ -1,7 +1,7 @@
 {
   "name": "node-ardx",
   "description": "Exercises for exploring the Arduino Experimenter's kit using johnny-five",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "http://node-ardx.org/",
   "scripts": {
     "start": "node app.js"

@@ -24,7 +24,11 @@ Looks like a mini light bulb.
 ### More Details:
 http://ardx.org/LED
 
+### Exercises
+[1](/exercises/1), [2](/exercises/2), [5](/exercises/5), [7](/exercises/7), [8](/exercises/8), [9](/exercises/9), [11](/exercises/11)
+
 <hr/>
+
 <a id="diode"></a>
 ## Diode
 ![Diode](/images/parts/DIOD-01.jpg "Diode")
@@ -38,6 +42,8 @@ Usually a cylinder with wires extending from either end (and an off center line 
 Will only work in one direction (current will flow if end with the line is connected to ground)
 ### More Details:
 http://ardx.org/DIOD
+### Exercises
+[3](/exercises/3), [11](/exercises/11)
 
 <hr/>
 <a id="resistor"></a>
@@ -58,7 +64,8 @@ Easy to grab the wrong value (double check the colors before using)
 
 ### More Details:
 http://ardx.org/RESI
-
+### Exercises
+[1](/exercises/1), [2](/exercises/2), [3](/exercises/3), [5](/exercises/5), [7](/exercises/7), [8](/exercises/8), [9](/exercises/9), [11](/exercises/11), [12](/exercises/12), [13](/exercises/13), [14](/exercises/14)
 
 <hr/>
 <a id="transistor"></a>
@@ -75,7 +82,8 @@ Comes in many different packages but you can read the part number off the packag
 Plugging in the right way round (also a current limiting resistor is often needed on the base pin)
 ### More Details:
 http://ardx.org/TRAN
-
+### Exercises
+[3](/exercises/3), [11](/exercises/11)
 
 <hr/>
 <a id="servo"></a>
@@ -92,6 +100,8 @@ The plug is not polarized so make sure it is plugged in the right way.
 
 ### More Details:
 http://ardx.org/SERV
+### Exercises
+[4](/exercises/4), [8](/exercises/8), [9](/exercises/9), [13](/exercises/13)
 
 <hr/>
 <a id="dcmotor"></a>
@@ -108,7 +118,8 @@ Using a transistor or relay that is rated for the size of motor you're using.
 
 ### More Details:
 http://ardx.org/MOTO
-
+### Exercises
+[3](/exercises/3), [11](/exercises/11)
 
 <hr/>
 <a id="piezo"></a>
@@ -126,6 +137,9 @@ Difficult to misuse.
 ### More Details:
 http://ardx.org/PIEZ
 
+### Exercises
+[6](/exercises/6)
+
 <hr/>
 <a id="ic"></a>
 ## IC (Integrated Circuit)
@@ -142,6 +156,9 @@ Proper orientation (look for marks showing pin 1)
 ### More Details:
 http://ardx.org/ICIC
 
+### Exercises
+[5](/exercises/5)
+
 <hr/>
 <a id="pushbutton"></a>
 ## Pushbutton
@@ -157,6 +174,9 @@ These are almost square so can be inserted 90 degrees off angle.
 
 ### More Details:
 http://ardx.org/BUTT
+
+### Exercises
+[7](/exercises/7)
 
 <hr/>
 <a id="pot"></a>
@@ -175,6 +195,9 @@ Accidentally buying logarithmic scale.
 ### More Details:
 http://ardx.org/POTE
 
+### Exercises
+[8](/exercises/8)
+
 <hr/>
 <a id="photoresistor"></a>
 ## Photo Resistor
@@ -190,6 +213,9 @@ Remember it needs to be in a voltage divider before it provides a useful input.
 
 ### More Details:
 http://ardx.org/PHOT
+
+### Exercises
+[9](/exercises/9)
 
 <hr/>
 <a id="tempsensor"></a>
@@ -207,6 +233,9 @@ It looks a bit like the P2N2222AG transistors - check the text printed on the co
 ### More Details:
 http://ardx.org/TMP36
 
+### Exercises
+[10](/exercises/10)
+
 <hr/>
 <a id="relay"></a>
 ## Relay
@@ -217,7 +246,25 @@ Acts as an electrically controlled mechanical switch.
 Depends on the relay. We will use a SPDT relay which has 5.
 ### Identifying:
 Looks like a box.
+### Exercises
+[11](/exercises/11)
 
+<hr/>
+<a id="rgbled"></a>
+## RGB LED
+![RBG LED](/images/parts/LED-05-RGB.jpg "RGB LED")
+### What it Does:
+Three LEDs in one package: Red, Green and Blue.
+### No. of Leads:
+4
+### Identifying:
+Looks like a regular LED, but with extra leads
+### Things to watch out for:
+There are two common form factors, bulb style (where the common lead is the second lead and is the longest), and Pirahna or UFO form factor (pictured - insert these into the breadboard on the diagonal).
+
+There are two types of RGB LED, Common Anode and Common Cathode. For Common Anode, connect the common lead to 5V. For Common Cathode, connect the common lead to ground. The three other leads are for R, G and B signal. This guide assumes that you are using a Common Cathode RGB LED.
+### Exercises
+[12](/exercises/12)
 
 <hr/>
 <a id="breadboard"></a>

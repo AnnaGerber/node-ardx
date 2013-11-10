@@ -21,11 +21,11 @@ Along with controlling the LEDs we start looking into a few  programming methods
 
 <a id="circuit"></a>
 ## Circuit Layout
-[<img style="max-width:400px" src="/images/circ/CIRC02-sheet-small.png" alt="Circuit Layout"/>](/images/circ/CIRC02-sheet.png)
+[<img style="max-width:400px" src="../../images/circ/CIRC02-sheet-small.png" alt="Circuit Layout"/>](../../images/circ/CIRC02-sheet.png)
 
 <a id="assembly"></a>
 ## Circuit Assembly
-![Assembly Diagram](/images/assembly/CIRC-02-3dexploded.png "Assembly Diagram")
+![Assembly Diagram](../../images/assembly/CIRC-02-3dexploded.png "Assembly Diagram")
 
 Assembly video: http://ardx.org/VIDE02
 

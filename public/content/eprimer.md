@@ -8,7 +8,7 @@ For an introduction to what an Arduino is, visit http://arduino.cc/en/Guide/Home
 ## LED
 (Light Emitting Diode)
 
-![LED](/images/parts/LED-05B-SR.jpg "LED")
+![LED](../images/parts/LED-05B-SR.jpg "LED")
 
 ### What it Does:
 Emits light when a small current is passed through it. (only in one direction) 
@@ -31,7 +31,7 @@ http://ardx.org/LED
 
 <a id="diode"></a>
 ## Diode
-![Diode](/images/parts/DIOD-01.jpg "Diode")
+![Diode](../images/parts/DIOD-01.jpg "Diode")
 ### What it Does:
 The electronic equivalent of a one way valve. Allowing current to flow in one direction but not the other. 
 ### No. of Leads:
@@ -48,7 +48,7 @@ http://ardx.org/DIOD
 <hr/>
 <a id="resistor"></a>
 ## Resistor
-![Resistor](/images/parts/RES-102.jpg "Resistor")
+![Resistor](../images/parts/RES-102.jpg "Resistor")
 
 ### What it Does:
 Restricts the amount of current that can flow through a circuit.
@@ -57,7 +57,7 @@ Restricts the amount of current that can flow through a circuit.
 ### Identifying:
 Cylinder with wires extending from either end. The value is displayed using a color coding system.
 
-![Resistor Colors](/images/ResistorColors.png "Resistor Colors")
+![Resistor Colors](../images/ResistorColors.png "Resistor Colors")
 
 ### Things to watch out for:
 Easy to grab the wrong value (double check the colors before using)
@@ -70,7 +70,7 @@ http://ardx.org/RESI
 <hr/>
 <a id="transistor"></a>
 ## Transistor
-![Transistor](/images/parts/TRANS.jpg "Transistor")
+![Transistor](../images/parts/TRANS.jpg "Transistor")
 ### What it Does:
 Uses a small current to switch or amplify a much larger current.
 
@@ -88,7 +88,7 @@ http://ardx.org/TRAN
 <hr/>
 <a id="servo"></a>
 ## Servo
-![Servo](/images/parts/SERVO.jpg "Servo")
+![Servo](../images/parts/SERVO.jpg "Servo")
 ### What it Does:
 Takes a timed pulse and converts it into an angular position of the output shaft.
 ### No. of Leads:
@@ -106,7 +106,7 @@ http://ardx.org/SERV
 <hr/>
 <a id="dcmotor"></a>
 ## DC Motor 
-![DC Motor](/images/parts/MOTOR.jpg "DC Motor")
+![DC Motor](../images/parts/MOTOR.jpg "DC Motor")
 ### What it Does:
 Spins when a current is passed through it.
 ### No. of Leads:
@@ -124,7 +124,7 @@ http://ardx.org/MOTO
 <hr/>
 <a id="piezo"></a>
 ## Piezo Element
-![Piezo](/images/parts/PIEZO.jpg "Piezo")
+![Piezo](../images/parts/PIEZO.jpg "Piezo")
 ### What it Does:
 A pulse of current will cause it to click. A stream of pulses will cause it to emit a tone.
 ### No. of Leads:
@@ -143,7 +143,7 @@ http://ardx.org/PIEZ
 <hr/>
 <a id="ic"></a>
 ## IC (Integrated Circuit)
-![IC-74HC595](/images/parts/IC-74HC595.jpg "IC-74HC595")
+![IC-74HC595](../images/parts/IC-74HC595.jpg "IC-74HC595")
 ### What it Does:
 Packages any range of complicated electronics inside an easy to use package.
 ### No. of Leads:
@@ -162,7 +162,7 @@ http://ardx.org/ICIC
 <hr/>
 <a id="pushbutton"></a>
 ## Pushbutton
-![Button](/images/parts/BUTT.jpg "Button")
+![Button](../images/parts/BUTT.jpg "Button")
 ### What it Does:
 Completes a circuit when it is pressed.
 ### No. of Leads:
@@ -181,7 +181,7 @@ http://ardx.org/BUTT
 <hr/>
 <a id="pot"></a>
 ## Potentiometer
-![Potentiometer](/images/parts/POT-103-A.jpg "Potentiometer")
+![Potentiometer](../images/parts/POT-103-A.jpg "Potentiometer")
 
 ### What it Does:
 Produces a variable resistance dependant on the angular position of the shaft.
@@ -201,7 +201,7 @@ http://ardx.org/POTE
 <hr/>
 <a id="photoresistor"></a>
 ## Photo Resistor
-![Photo Resistor](/images/parts/IC-PHOTO.jpg "Photo Resistor")
+![Photo Resistor](../images/parts/IC-PHOTO.jpg "Photo Resistor")
 ### What it Does:
 Produces a variable resistance dependant on the amount of incident light.
 ### No. of Leads:
@@ -220,7 +220,7 @@ http://ardx.org/PHOT
 <hr/>
 <a id="tempsensor"></a>
 ## TMP36 Temperature Sensor
-![TMP36](/images/parts/TMP36-01.jpg "TMP36")
+![TMP36](../images/parts/TMP36-01.jpg "TMP36")
 ### What it Does:
 Produces a variable resistance dependant on the ambient temperature. It outputs 10 millivolts per degree centigrade on the signal pin, with a 500mV offset to allow measuring negative temperatures.
 ### No. of Leads:
@@ -239,7 +239,7 @@ http://ardx.org/TMP36
 <hr/>
 <a id="relay"></a>
 ## Relay
-![Relay](/images/parts/RELAY-01.jpg "Relay")
+![Relay](../images/parts/RELAY-01.jpg "Relay")
 ### What it Does:
 Acts as an electrically controlled mechanical switch.
 ### No. of Leads:
@@ -252,7 +252,7 @@ Looks like a box.
 <hr/>
 <a id="rgbled"></a>
 ## RGB LED
-![RBG LED](/images/parts/LED-05-RGB.jpg "RGB LED")
+![RBG LED](../images/parts/LED-05-RGB.jpg "RGB LED")
 ### What it Does:
 Three LEDs in one package: Red, Green and Blue.
 ### No. of Leads:
@@ -269,7 +269,7 @@ There are two types of RGB LED, Common Anode and Common Cathode. For Common Anod
 <hr/>
 <a id="breadboard"></a>
 ## Solderless Breadboard
-![Breadboard](/images/parts/BREA-01.jpg "Breadboard")
+![Breadboard](../images/parts/BREA-01.jpg "Breadboard")
 ### What it Does:
 Used for prototyping circuits
 
@@ -280,7 +280,7 @@ The points in each row are connected horizontally
 <hr/>
 <a id="headerpins"></a>
 ## Header Pins
-![Header Pins](/images/parts/HEAD-16.jpg "Header pins")
+![Header Pins](../images/parts/HEAD-16.jpg "Header pins")
 ### What it Does:
 In this kit, header pins are used to secure the circuit sheets to the breadboard and to connect component leads (e.g. on the servo) to the breadboard. Groups of pins can be snapped off to desired length.
 

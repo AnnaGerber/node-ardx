@@ -17,11 +17,11 @@ of a potentiometer (twist based resistance) we use a photo resistor (light based
 
 <a id="circuit"></a>
 ## Circuit Layout
-[<img style="max-width:400px" src="/images/circ/CIRC09-sheet-small.png" alt="Circuit Layout"/>](/images/circ/CIRC09-sheet.png)
+[<img style="max-width:400px" src="../../images/circ/CIRC09-sheet-small.png" alt="Circuit Layout"/>](../../images/circ/CIRC09-sheet.png)
 
 <a id="assembly"></a>
 ## Circuit Assembly
-![Assembly Diagram](/images/assembly/CIRC-09-3dexploded.png "Assembly Diagram")
+![Assembly Diagram](../../images/assembly/CIRC-09-3dexploded.png "Assembly Diagram")
 
 Assembly video: http://ardx.org/VIDE09
 

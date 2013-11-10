@@ -1,8 +1,8 @@
-var exercises = require('../content/exercises.json');
+var exercises = require('../public/content/exercises.json');
 var markedejs = require('markedejs');
 
 exports.intro = function(req, res){
-	markedejs.renderFile('content/introduction.md', {}, function(err, html){
+	markedejs.renderFile('public/content/introduction.md', {}, function(err, html){
 		res.render('layout',
 		{
 			title: 'Arduino Experimenter\'s Guide for NodeJS',
@@ -15,7 +15,7 @@ exports.intro = function(req, res){
 	});
 };
 exports.eprimer = function(req, res){
-	markedejs.renderFile('content/eprimer.md', {}, function(err, html){
+	markedejs.renderFile('public/content/eprimer.md', {}, function(err, html){
 		res.render('layout',
 		{
 			title: 'Electronics Primer',
@@ -28,7 +28,7 @@ exports.eprimer = function(req, res){
 	});
 };
 exports.jprimer = function(req, res){
-	markedejs.renderFile('content/jsprimer.md', {}, function(err, html){
+	markedejs.renderFile('public/content/jsprimer.md', {}, function(err, html){
 		res.render('layout',
 		{
 			title: 'JavaScript Primer',
@@ -52,7 +52,7 @@ exports.exercise = function(req, res){
 		data.exIndex = exIndex;
 		data.circCode = exNumber;
 		data.isExercise = true;
-		markedejs.renderFile('content/exercises/ex' + (exIndex+1) + '.md', {}, function(err, html){
+		markedejs.renderFile('public/content/exercises/ex' + (exIndex+1) + '.md', {}, function(err, html){
 			data.content = html;
 			res.render('layout',data);
 		});

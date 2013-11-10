@@ -19,11 +19,11 @@ This is included because an Arduino doesn't sense the same way we do (ie button 
 
 <a id="circuit"></a>
 ## Circuit Layout
-[<img style="max-width:400px" src="/images/circ/CIRC07-sheet-small.png" alt="Circuit Layout"/>](/images/circ/CIRC07-sheet.png)
+[<img style="max-width:400px" src="../../images/circ/CIRC07-sheet-small.png" alt="Circuit Layout"/>](../../images/circ/CIRC07-sheet.png)
 
 <a id="assembly"></a>
 ## Circuit Assembly
-![Assembly Diagram](/images/assembly/CIRC-07-3dexploded.png "Assembly Diagram")
+![Assembly Diagram](../../images/assembly/CIRC-07-3dexploded.png "Assembly Diagram")
 
 Assembly video: http://ardx.org/VIDE07
 

@@ -60,14 +60,14 @@ You can find this code in `code/CIRC-02-code-leds.js`
 	  	for (var i = 0; i < leds.length; i++) {
 	  	  var led = leds[i];
 	  	  board.wait(delay,function(){
-	  	  	console.log(this.counter + " on")
+	  	  	console.log(this.counter + " on");
 	  	  	leds[this.counter].on();
-	  	  })
+	  	  });
 	  	  board.wait(delay + 200,function(){
-	  	  	console.log(this.counter + " off")
+	  	  	console.log(this.counter + " off");
 	  	  	leds[this.counter].off();
 	  	  	this.counter = (this.counter + 1) % leds.length;
-	  	  })
+	  	  });
 	  	  delay += 500;
 	  	}
 	  }

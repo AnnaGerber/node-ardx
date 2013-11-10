@@ -80,8 +80,8 @@ Time to start controlling the LEDs in a similar method as we did in [Exercise 2]
 
 Comment out the next() function call at the end and run the program again. Use the REPL to try sending diferent values to the shift register until you understand how this works e.g. the following will turn all LEDs off and then turn on LED 2: 
 
-    sr.send(0)
-    sr.send(0x02)
+    sr.send(0);
+    sr.send(0x02);
 
 Some patterns to try:
 

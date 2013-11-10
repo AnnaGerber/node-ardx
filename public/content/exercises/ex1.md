@@ -10,7 +10,7 @@ To get started, grab the parts listed below, pin the circuit layout sheet to you
 
 Plug the Arduino in, and run the program from the node-ardx directory as follows:
 
-    node code/CIRC01-code-led-a-strobe.js
+`node code/CIRC01-code-led-a-strobe.js`
 
 You can interact with the LED via the REPL console e.g. at the `>>` prompt type `led.stop()` to make it stop blinking. Hit control-D to exit the program when you are done.
 
@@ -44,7 +44,7 @@ You can find this code in `code/CIRC-01-code-led-a-strobe.js`
 
 	myBoard.on("ready", function() {
 
-	  myLed = new j5.Led(13)
+	  myLed = new j5.Led(13);
 
 	  myLed.strobe( 1000 );
 
@@ -91,7 +91,7 @@ Unhappy with the default strobe speed? In the code change the parameter to the s
 ### Control the brightness:
 Along with digital (on/off) control the Arduino can control some pins in an analog (brightness) fashion. (more details on this in later circuits). To play around with it change the LED to pin 9 and use the `pulse` method instead of `strobe`, like we have in this program:
 
-    node code/CIRC01-code-led-b-pulse.js
+`node code/CIRC01-code-led-b-pulse.js`
 
 <a id="more"></a>
 ## More

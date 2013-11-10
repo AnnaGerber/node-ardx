@@ -30,3 +30,13 @@ $('.exercise-title').on('click', function(){
   menuItems.closest('.exercise-item').removeClass("exercise-item-selected");
   $(this).closest('.exercise-item').addClass('exercise-item-selected');
 });
+$('pre').each(function(i,e){
+  var codeEl = $(e);
+  var height = codeEl.height();
+  codeEl.css('height',height + "px");
+  ace.config.set('basePath', '/vendor/ace');
+  var editor = ace.edit(e);
+  editor.setShowPrintMargin(false);
+  editor.setTheme("ace/theme/chrome");
+  editor.getSession().setMode("ace/mode/javascript"); 
+})

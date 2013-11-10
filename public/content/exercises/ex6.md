@@ -43,7 +43,7 @@ You can find this code in `code/CIRC-06-code-beep.js`
 	  		this.analogWrite(piezoPin, 0);
 	  	}
 	  	val = val ? 0 : 1;
-	  })
+	  });
 	});
 
 ** Note: At the time of writing, the Piezo object is disabled in Johnny-Five - so we will make the piezo beep by writing directly to the pins e.g. using `board.analogWrite(9,value)` **

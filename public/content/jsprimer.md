@@ -39,21 +39,21 @@ Numeric operators include + (addition) - (subtraction) / (division) * (multiplic
     x++; // x is 6
     x--; // x is 5
     x += 3; // x is 8
-    var aString = "The value of x is " + x
+    var aString = "The value of x is " + x;
 
 The `this` operator refers to the current execution context
 
 The `typeof` operator returns the type
     
-    typeof aString // returns "string"
+    typeof aString; // returns "string"
 
 ## Math
 
-    Math.floor(myInt)
-    Math.ceil(myInt)
-    Math.min(x, y)
-    Math.random() // random number between 0 and up to but not equal to 1
-    Math.PI
+    Math.floor(myInt);
+    Math.ceil(myInt);
+    Math.min(x, y);
+    Math.random(); // random number between 0 and up to but not equal to 1
+    Math.PI;
 
 ## Comments
 

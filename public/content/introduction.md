@@ -16,13 +16,14 @@ You can install this guide to your own computer. Make sure you have node.js and 
 
 Install this guide with the following commands:
 
-    git clone https://github.com/AnnaGerber/node-ardx.git && cd node-ardx
-    npm install
+`git clone https://github.com/AnnaGerber/node-ardx.git && cd node-ardx`
+
+`npm install`
 
 
 Run the node-ardx web application from the node-ardx directory:
 
-    node app.js
+`node app.js`
 
 Visit [http://localhost:3000](http://localhost:3000) in your web browser to view the guide.
 
@@ -59,11 +60,11 @@ If you are having trouble uploading, a full trouble shooting guide can be found 
 
 The Johnny-Five module has already been installed when you installed this guide, so any code examples you create within the node-ardx directory will run. If you are creating code in a different location, you will need to install the Johnny-Five module, e.g:
 
-    npm install johnny-five
+`npm install johnny-five`
 
 Run code examples from the terminal e.g.
 
-    node code/CIRC01-code-led-a-strobe.js
+`node code/CIRC01-code-led-a-strobe.js`
 
 <a id="repl"></a>
 ### Using the REPL

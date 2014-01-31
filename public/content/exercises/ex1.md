@@ -1,4 +1,3 @@
-
 LEDs (light emitting diodes) are used in all sorts of clever things
 which is why they are included in the Experimenter's kit. We will start off
 with something very simple, turning one on and off, repeatedly,
@@ -81,7 +80,7 @@ Sometimes this happens if Johnny-Five can't communicate with the Arduino via the
 The LED is connected to pin 13 but we can use any of the Arduino’s pins. To change it unplug the Arduino, take the wire plugged into pin 13 and move it to a pin of your choice (from 0 - 13) (you can also use analog 0 - 5). Then in the code add a variable to store the pin to make it easier to change e.g. to change it to analog 0 use:
 
     var ledPin = "A0";
-    myLed = new j5.Led(newPin); 
+    myLed = new j5.Led(ledPin); 
 
 ### Change the blink time:
 Unhappy with the default strobe speed? In the code change the parameter to the strobe method to control the speed (in milliseconds) e.g.:

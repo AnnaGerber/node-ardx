@@ -1,4 +1,3 @@
-
 The Arduino's pins are great for directly controlling small electric
 items like LEDs. However, when dealing with larger items (like a
 toy motor or washing machine), an external transistor is required. A
@@ -15,7 +14,7 @@ The 1N4001 diode is acting as a flyback diode. For details on why it's there vis
 * Transistor P2N2222AG (TO92)
 * Toy motor
 * Diode (1N4001) 
-* 10k Ohm Resistor (brown-black-orange)
+* 330 Ohm Resistor (orange-orange-brown)
 * jumper wires
 
 <a id="circuit"></a>
@@ -52,7 +51,7 @@ You can find this code in `code/CIRC-03-code-motor.js`
 	  myMotor.on("stop", function( err, timestamp ) {
 	    console.log( "stopped", timestamp );
 	  });
-
+	  myMotor.start();
 	});
 
 <a id="troubleshooting"></a>

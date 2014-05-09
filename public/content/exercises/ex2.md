@@ -1,5 +1,5 @@
-We have caused one LED to blink, now it's time to up the
-stakes. Lets connect eight. We'll also have an opportunity to
+We have caused one LED to blink; now it's time to up the
+stakes. Let's connect eight. We'll also have an opportunity to
 stretch the Arduino a bit by creating various lighting
 sequences. This circuit is also a nice setup to experiment with
 writing your own programs and getting a feel for how the Arduino works.

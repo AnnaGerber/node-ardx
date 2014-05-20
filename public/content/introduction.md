@@ -51,7 +51,7 @@ Before you can start programming your NodeBots, you will need to load Firmata on
 * Launch Arduino IDE and open the Firmata sketch via the menu: `File > Examples > Firmata > StandardFirmata`
 * Select your Arduino board type (e.g. Arduino Uno) via `Tools > Board`
 * Select the port for your board via `Tools > Serial Port > (the comm port of your Arduino)`
-* Upload the program by selecting `File > Upload to I/O Board`
+* Upload the program by selecting `File > Upload`
 
 If you are having trouble uploading, a full trouble shooting guide can be found here: [http://ardx.org/TRBL](http://ardx.org/TRBL)
 

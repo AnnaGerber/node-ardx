@@ -87,15 +87,13 @@ We use the `board.wait` method to schedule behaviour at certain times. It takes 
 ## Troubleshooting
 
 ### Some LEDs Fail to Light
-
-It is easy to insert an LED backwards. Check the LEDs that aren't working and ensure they the right way around.
+It is easy to insert an LED backwards. Check the LEDs that aren't working and ensure they are the right way around.
 
 ###  Operating out of sequence
-
-With eight wires it's easy to cross a couple. Double check that the first LED is plugged into pin 2 and each pin there after.
+With eight wires, it's easy to cross a couple. Double check that the first LED is plugged into pin 2 and each pin there after.
 
 ### Starting afresh
-Its easy to accidentally misplace a wire without noticing. Pulling everything out and starting with a fresh slate is often easier than trying to track down the problem.
+It's easy to accidentally misplace a wire without noticing. Pulling everything out and starting with a fresh slate is often easier than trying to track down the problem.
 
 <a id="extending"></a>
 ## Extending the Code

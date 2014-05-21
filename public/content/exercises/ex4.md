@@ -26,7 +26,7 @@ Assembly video: http://ardx.org/VIDE04
 <a id="code"></a>
 ## Code
 
-You can find this code in `code/CIRC-04-code-servo.js`
+You can find this code in `code/CIRC04-code-servo.js`
 
 	var five = require("johnny-five"),
     board, myServo;

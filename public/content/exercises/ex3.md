@@ -30,7 +30,7 @@ Assembly video: http://ardx.org/VIDE03
 <a id="code"></a>
 ## Code
 
-You can find this code in `code/CIRC-03-code-motor.js`
+You can find this code in `code/CIRC03-code-motor.js`
 
 	var five = require("johnny-five"),
 	    board, myMotor, led;

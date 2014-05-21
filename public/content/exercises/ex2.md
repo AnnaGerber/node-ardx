@@ -32,7 +32,7 @@ Assembly video: http://ardx.org/VIDE02
 <a id="code"></a>
 ## Code
 
-You can find this code in `code/CIRC-02-code-leds.js`
+You can find this code in `code/CIRC02-code-leds.js`
 
 	var j5 = require("johnny-five");
 	var myBoard, leds=[], ledPins = [2,3,4,5,6,7,8,9];

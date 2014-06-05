@@ -12,7 +12,7 @@ board.on("ready", function() {
 
   myLed = new five.Led(9);
 
-  myPotentiometer.on("read", function() {
+  myPotentiometer.on("data", function() {
     var rawValue = this.raw;
     myLed.brightness(Math.floor(rawValue / 4));
   });

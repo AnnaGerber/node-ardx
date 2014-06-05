@@ -12,8 +12,8 @@ board.on("ready", function() {
     freq: 250
   });
 
-  
-  myPhotoresistor.on("read", function( err, value ) {
+
+  myPhotoresistor.on("data", function( err, value ) {
     // range of led brightness is 0 - 255
     var brightnessValue = five.Fn.constrain(five.Fn.map(value, 0, 900, 0, 255), 0, 255);
     myLed.brightness(brightnessValue);

@@ -24,8 +24,8 @@ board.on("ready", function() {
     pin: "A0",
     freq: 250
   });
-  
-  mySoftPot.on("read", function( err, value ) {
+
+  mySoftPot.on("data", function( err, value ) {
     console.log("read value",value);
     var rgbColors = getRGB(value);
     myLed.color(rgbColors);

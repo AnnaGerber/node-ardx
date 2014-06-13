@@ -1,7 +1,7 @@
 var j5 = require("johnny-five");
-var myBoard = new j5.Board();
+var board = new j5.Board();
 
-myBoard.on("ready", function() {
+board.on("ready", function() {
   var ledPins = [2,3,4,5,6,7,8,9];
   var leds = new j5.Leds(ledPins);
 

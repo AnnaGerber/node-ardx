@@ -16,7 +16,7 @@ board.on("ready", function() {
     board.wait(2000, function() {
       myMotor.stop();
     });
-  }); 
+  });
 
   myMotor.on("stop", function( err, timestamp ) {
     console.log( "stopped", timestamp );
@@ -24,5 +24,9 @@ board.on("ready", function() {
 
   // start motor - speed argument (between 0 and 255) is optional
   myMotor.start(250);
-  
+
+  this.repl.inject({
+    myMotor: myMotor
+  });
+
 });

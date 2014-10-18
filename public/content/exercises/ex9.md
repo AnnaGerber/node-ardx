@@ -73,16 +73,27 @@ Run the program again and watch the response change
 ### Night light:
 Rather than controlling the brightness of the LED in
 response to light, let's instead turn it on or off based on
-a threshold value. Change the code in the photoresistor's read handler to:
+a threshold value. Change the photoresistor's data handler to:
 
-	myPhotoresistor.on("read", function( err, value ) {
-	    var threshold = 300;
-	    if (value > threshold) {
+	myPhotoresistor.on("data", function( err, value ) {
+	  var threshold = 300;
+	  if (value > threshold) {
+	    myLed.on();
+	  } else {
+	    myLed.off();
+	  }
+	});
+
+Or: 
+
+	myPhotoresistor.booleanAt(512).on("data", function( err, value ) {
+	    if (this.boolean) {
 	    	myLed.on();
 	    } else {
 	    	myLed.off();
 	    }
-	  });
+	});
+
 
 ### Light controlled servo
 Let's use our newly found light sensing skills to control a servo. Wire up a servo connected to pin 9 (like in [Exercise 4](/exercises/4)). Then open the code you wrote for controlling a servo in [Exercise 8](/exercises/8#extending) and satch as it works unmodified.

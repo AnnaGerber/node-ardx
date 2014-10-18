@@ -33,11 +33,9 @@ Assembly video: http://ardx.org/VIDE07
 	var five = require("johnny-five"),
 	    onButton, offButton, led;
 	five.Board().on("ready", function() {
-	  onButton = new five.Button({
-	    pin: 2
-	  });
-	  
+	  onButton = new five.Button(2);
 	  led = new five.Led(13);
+
 	  onButton.on("down", function(value){
 	    led.on();
 	  });
@@ -62,9 +60,7 @@ No worries these circuits are all super stripped down to make playing with the c
 ### On button off button:
 The initial example may be a little underwhelming (we don't really need an Arduino to do this), so let’s make it a little more complicated. One button will turn the LED on the other will turn the LED off. Add the following to the code:
 
-	offButton = new five.Button({
-	    pin: 3
-	});
+	offButton = new five.Button(3);
 	offButton.on("down", function(){
 	    led.off();
 	});

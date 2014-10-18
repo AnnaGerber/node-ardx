@@ -3,13 +3,9 @@ var five = require("johnny-five"),
 
 five.Board().on("ready", function() {
 
-  onButton = new five.Button({
-    pin: 2
-  });
+  onButton = new five.Button(2);
 
-  offButton = new five.Button({
-    pin: 3
-  });
+  offButton = new five.Button(3);
 
   led = new five.Led(13);
 

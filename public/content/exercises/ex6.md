@@ -31,22 +31,17 @@ You can find this code in `code/CIRC-06-code-beep.js`
 	var five = require("johnny-five");
 
 	five.Board().on("ready", function() {
+	  var piezo = new five.Piezo(9);
 	  var val = 0;
-	  var piezoPin = 9;
-	  // Set pin 9 to PWM mode
-	  this.pinMode( piezoPin, 3 );
-	  // beep continously
-	  this.loop(200, function(){
-	  	if (val){
-	  		this.analogWrite( piezoPin, 20 );
-	  	} else {
-	  		this.analogWrite(piezoPin, 0);
-	  	}
-	  	val = val ? 0 : 1;
+
+	  this.loop(200, function() {
+	    if (val ^= 1) {
+	      // Play note a4 for 1/5 second
+	      piezo.frequency(five.Piezo.Notes["a4"], 200);
+	    }
 	  });
 	});
 
-** Note: At the time of writing, the Piezo object is disabled in Johnny-Five - so we will make the piezo beep by writing directly to the pins e.g. using `board.analogWrite(9,value)` **
 
 <a id="troubleshooting"></a>
 ## Troubleshooting

@@ -1,13 +1,14 @@
 var j5 = require("johnny-five");
-var myBoard, relayPin, val;
-
-myBoard = new j5.Board();
-relayPin = 2;
-val = 0;
+var myBoard = new j5.Board();
 
 myBoard.on("ready", function() {
-  this.pinMode( relayPin, 1 );
-  this.loop( 1000, function() {
-    this.digitalWrite( relayPin, (val = val ? 0 : 1) );
+  var val = 0;
+  var relay = new j5.Relay(2);
+  this.loop(1000, function() {
+    if (val ^= 1) {
+      relay.on();
+    } else {
+      relay.on();
+    }
   });
 });

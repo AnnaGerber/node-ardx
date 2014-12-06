@@ -30,7 +30,7 @@ Visit [http://localhost:3000](http://localhost:3000) in your web browser to view
 <a id="openhardware"></a>
 ## ABOUT OPEN SOURCE HARDWARE
 
-This guide has been adapted by [Anna Gerber](https://github.com/AnnaGerber) from the SparkFun version of .:oomlout:.'s ARDX (Arduino Experimenter's) Guide.
+This guide has been adapted by [Anna Gerber](https://github.com/AnnaGerber) and [other members of the NodeBots community](https://github.com/AnnaGerber/node-ardx/graphs/contributors) from the SparkFun version of .:oomlout:.'s ARDX (Arduino Experimenter's) Guide.
 
 All of .:oomlout:.'s projects are open source. What does this mean? It means that all of the materials that make up the ARDX kit, including this guide, circuit diagrams and code are available for free download. But it goes further: you're also free to reproduce and modify any of this material, then distribute it for yourself. This is possible because this guide is released under a Creative Commons (CC-BY-SA) license. If you reproduce or modify this guide you must credit SparkFun and .:oomlout:. in your design and share your developments in a similar manner. Why? We grew up learning and playing with open source software and the experience was good fun. We think it would be lovely if a similar experience was possible with physical things.
 

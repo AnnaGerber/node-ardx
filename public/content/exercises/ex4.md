@@ -23,6 +23,8 @@ dollars to hundreds. Inside is a small gearbox (to make the movement more powerf
 
 Assembly video: http://ardx.org/VIDE04
 
+It's interesting to note that we don't actually need to use the breadboard in this circuit. We can just plug jumper wires directly into the servo's connector (one per hole) and into the Arduino. The black lead should go to one of the Arduino's Gnd pins, the red lead should go to a +5v pin, and the white lead should go to Pin 9.
+
 <a id="code"></a>
 ## Code
 

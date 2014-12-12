@@ -1,9 +1,9 @@
-var j5 = require("johnny-five");
-var board = new j5.Board();
+var five = require("johnny-five");
+var board = new five.Board();
 
 board.on("ready", function() {
   var ledPins = [2,3,4,5,6,7,8,9];
-  var leds = new j5.Leds(ledPins);
+  var leds = new five.Leds(ledPins);
 
   function oneAfterAnother() {
     var delay = 1;

@@ -34,14 +34,14 @@ Assembly video: http://ardx.org/VIDE02
 
 You can find this code in `code/CIRC02-code-leds.js`
 
-	var j5 = require("johnny-five");
+	var five = require("johnny-five");
 	var board, leds=[], ledPins = [2,3,4,5,6,7,8,9];
-	board = new j5.Board();
+	board = new five.Board();
 	board.on("ready", function() {
 	
 	  // initialize LEDs using a for loop
 	  for (var i = 0; i < ledPins.length; i++){
-	      var myLed = new j5.Led(ledPins[i]);
+	      var myLed = new five.Led(ledPins[i]);
 	      leds.push(myLed);
 	  }     
 	  function allOn(){

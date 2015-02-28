@@ -8,7 +8,7 @@ myBoard.on("ready", function() {
     if (val ^= 1) {
       relay.on();
     } else {
-      relay.on();
+      relay.off();
     }
   });
 });

@@ -1,10 +1,13 @@
 var five = require("johnny-five");
+var board = new five.Board();
 
-five.Board().on("ready", function(){
-  var tempSensor = new five.Sensor("A0");
+board.on("ready", function() {
+  var temp = new five.Temperature({
+    pin: "A0",
+    controller: "TMP36"
+  });
 
-  tempSensor.on("data", function(err, value){
-    var cel = (100 * (value / 1000) - 50).toFixed(2);
-    console.log("temp is " + cel);
+  temp.on("change", function() {
+    console.log("Temp: %d", this.celsius);
   });
 });

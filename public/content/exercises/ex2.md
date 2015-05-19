@@ -35,50 +35,41 @@ Assembly video: http://ardx.org/VIDE02
 You can find this code in `code/CIRC02-code-leds.js`
 
 	var five = require("johnny-five");
-	var board, leds=[], ledPins = [2,3,4,5,6,7,8,9];
-	board = new five.Board();
+	var board = new five.Board();
+
 	board.on("ready", function() {
-	
-	  // initialize LEDs using a for loop
-	  for (var i = 0; i < ledPins.length; i++){
-	      var myLed = new five.Led(ledPins[i]);
-	      leds.push(myLed);
-	  }     
-	  function allOn(){
-	    for (var i = 0; i < leds.length; i++) {
-	        leds[i].on();
-	    }
-	  } 
-	  function allOff(){
-	    for (var i = 0; i < leds.length; i++) {
-	        leds[i].off();
-	    }
-	  }
+	  var ledPins = [2,3,4,5,6,7,8,9];
+	  var leds = new five.Leds(ledPins);
+
 	  function oneAfterAnother() {
-	      var delay = 1;
-	      board.counter = 0;
-	      for (var i = 0; i < leds.length; i++) {
-	        var led = leds[i];
-	        board.wait(delay,function(){
-	            console.log(this.counter + " on");
-	            leds[this.counter].on();
-	        });
-	        board.wait(delay + 200,function(){
-	            console.log(this.counter + " off");
-	            leds[this.counter].off();
-	            this.counter = (this.counter + 1) % leds.length;
-	        });
-	        delay += 500;
-	      }
+	    var delay = 1;
+	    board.counter = 0;
+	    for (var i = 0; i < leds.length; i++) {
+	      var led = leds[i];
+
+	      board.wait(delay,function(){
+	        console.log(this.counter + " on")
+	        leds[this.counter].on();
+	      })
+	      board.wait(delay + 200,function(){
+	        console.log(this.counter + " off")
+	        leds[this.counter].off();
+	        this.counter = (this.counter + 1) % leds.length;
+	      })
+	      delay += 500;
+	    }
 	  }
-	  // allOn();
-	  // board.wait(1000,allOff);
+
+	  // leds.on();
+	  // board.wait(1000, leds.off.bind(leds));
+
 	  oneAfterAnother();
 	  board.loop(4500, oneAfterAnother);
 	});
 
 
-We use arrays to keep track of the list of pins as well as the LED objects that we create. We can use for loops to iterate over (i.e. do something for each item in) the arrays.
+
+We use an `Leds` instance to track an collection (an array-like) of LED objects. We can use for loops to iterate over (i.e. do something for each item in) the collection.
 
 We have structured the program by breaking it down into functions (`allOn`, `allOff` and `oneAfterAnother`)
 

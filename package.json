@@ -17,7 +17,7 @@
   "bugs": "http://github.com/AnnaGerber/node-ardx/issues",
   "license": "CC-BY-SA",
   "dependencies": {
-    "express": "4.13.1",
+    "express": "3.4.0",
     "johnny-five": "0.8.85",
     "markedejs": "0.1.0",
     "ejs": "*",

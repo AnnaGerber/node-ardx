@@ -96,6 +96,10 @@ At the end of the program you will see two lines commented out (the `//` at the 
 ### Extra animations
 Bored of the default animation? Try modifying the timing of the `oneAfterAnother` function, or write your own animation function: the `board.loop` and `board.wait` functions will come in handy for scheduling LEDs to go on or off (or pulse, or change brightness etc) at scheduled times.
 
+### Ideas
+Want to play some more? There are numerous things that you can do by just being able to blink multiple LEDs
+- [Piano-LED](https://github.com/shrikrishnaholla/piano-led) makes the LEDs glow according to the tune played via a web-based Piano.
+
 ### Confused?
 Don't worry! This exercise is about exploring what is possible so there is a lot going on here. We'll take a step back to simpler code for the next couple of exercises.
 
